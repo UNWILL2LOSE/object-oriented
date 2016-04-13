@@ -17,16 +17,17 @@ int main(int argc, char** argv) {
 		Print p;
 		Calculation c;
 		if(demo=="-a"){
-			cout<<"进入算式显示选项"<<endl;
 			demo=*(argv+2);
-			cout<<"算式为："<<demo<<endl;
+			cout<<demo<<" = ";
 			queue<string> temp=s.ToStringQueue(demo);
-		}else{
-			cout<<"进入非算式宣示选项"<<endl;
-			cout<<"算式为："<<demo<<endl;
-			queue<string> temp=s.ToStringQueue(demo);
+			
 			c.sortStack(temp);
-			cout<<"运算结果:"<<c.solve()<<endl;
+			cout<<c.solve()<<endl;
+		}else{
+			queue<string> temp=s.ToStringQueue(demo);
+			
+			c.sortStack(temp);
+			cout<<c.solve()<<endl;
 		}
 			
 //		if(temp.empty()){
