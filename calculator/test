@@ -1,0 +1,124 @@
+//		string convert2String(double dou){
+////				定义流 
+//			stringstream stream;
+////			向流中传值
+//			stream<<dou;
+////			这里存储转换结果
+//			string result;
+////			向result中写入值
+//			stream>>result;
+////			返回值 
+//			return result;
+//		}
+//		
+//////		通过在次压栈的方法处理优先级 
+////		double push2Sovle(){
+////			
+////			
+////			
+////		}
+//
+//
+////		实现运算 
+//		double process(){
+//				double sum=0;
+//				while(!symbol.empty()||!digital.empty()){
+//					
+//					
+//					cout<<"size:"<<symbol.size()<<endl;
+//					cout<<"size:"<<digital.size()<<endl;
+//					
+//					if(symbol.top()=="+"){
+//						cout<<"加法"<<endl;
+//						symbol.pop();
+//						cout<<"true:"<<symbol.empty()<<endl;
+//						if(!symbol.empty()){
+//							double flag=checkMulti();
+//							digital.push(flag); 
+//							cout<<"check:"<<flag<<endl;
+//							sum=temp+flag;
+//							cout<<"sum"<<sum<<endl;
+//						}else{
+//							sum=temp+sum;
+//						}
+//					}else 
+//					if(symbol.top()=="-"){
+//						cout<<"减法"<<endl;
+//						symbol.pop();
+//						if(!symbol.empty()){
+//							double flag=checkMulti();
+//							digital.push(flag); 
+//							cout<<"check:"<<flag<<endl;
+//							sum=flag-temp;
+//							cout<<"sum"<<sum<<endl;
+//						}else{
+//							sum=temp-sum;
+//						} 
+//					}else 
+//					if(symbol.top()=="*"){
+//						cout<<"乘法"<<endl;
+//						symbol.pop();
+//						if(!symbol.empty()){
+//							double flag=checkMulti();
+//							digital.push(flag); 
+//							cout<<"check:"<<flag<<endl;
+//							sum=temp*flag;
+//							cout<<"sum"<<sum<<endl;
+//						}else{
+//							sum=temp*sum;
+//						}
+//					}else
+//					if(symbol.top()=="/"){
+//						cout<<"除法"<<endl;
+//						symbol.pop();
+//						if(!symbol.empty()){
+//							double flag=checkMulti();
+//							cout<<"check:"<<flag<<endl;
+//							digital.push(flag); 
+//							sum=flag/temp;
+//							cout<<"sum"<<sum<<endl;
+//						}else{
+//							sum=temp/sum;
+//						}
+//					}
+//				}
+//			cout<<"运算"<<endl;
+//			return sum;
+//		}
+//		
+////		实现检查下一符号 
+//		double checkMulti(){
+//			cout<<"test"<<endl;
+//			double sum;
+//			if(digital.size()>1){
+////				如果位+和-，则返回当前值 
+//				if(symbol.top()=="+"||symbol.top()=="-"){
+////					记录下一个值，并pop符号和数值
+//					sum=digital.top(); 
+//					digital.pop();
+//					cout<<"sum:"<<sum<<endl;
+//					return sum;
+//				}else if(symbol.top()=="*"||symbol.top()=="/"){
+//					if(symbol.top()=="*"){
+//						symbol.pop();
+//						sum=digital.top();
+//						cout<<"sum:"<<sum<<endl;
+//						digital.pop();
+//						sum=sum*checkMulti();
+//					}else
+//					if(symbol.top()=="/"){
+//						symbol.pop();
+//						sum=digital.top();
+//						digital.pop();
+//						sum=(1/sum)*checkMulti();
+//					}
+//					cout<<"sum:"<<sum<<endl;
+//					return sum;
+//				}
+//			}else{
+//				sum=digital.top();
+//				digital.pop();
+//				cout<<"sum:"<<sum<<endl;
+//				return sum;
+//			}
+//		}

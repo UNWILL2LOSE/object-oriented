@@ -4,5 +4,5 @@
 using namespace std;
 class Scan{
 	public:
-		queue<string> ToStringQueue(string input);//ÕûÀí×Ö·û´® 
+	queue<string> ToStringQueue(string input);
 };
