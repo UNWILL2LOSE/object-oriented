@@ -1,3 +1,5 @@
+#ifndef __CALC_H_
+#define __CALC_H 
 #include <iostream> 
 #include <string>
 #include <queue>
@@ -6,3 +8,4 @@ class Scan{
 	public:
 	queue<string> ToStringQueue(string input);
 };
+#endif

@@ -92,7 +92,20 @@ using namespace std;
 			stream>>result;
 //			返回值 
 			return result;
-		}	 
+		}	
+		
+//		string Calculation::convertDouble2String(double temp){
+////			定义流 
+//			stringstream stream;
+////			向流中传值
+//			stream<<temp;
+////			这里存储转换结果
+//			string result;
+////			向result中写入值
+//			stream>>result;
+////			返回值 
+//			return result;
+//		} 
 		
 		
 //		通过压栈降级 
