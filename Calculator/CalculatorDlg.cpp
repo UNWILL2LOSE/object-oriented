@@ -374,17 +374,24 @@ void CCalculatorDlg::OnBnClickedButtonEqual()
 {
 	// TODO: 在此添加控件通知处理程序代码
 	UpdateData(TRUE);
-	Scan s;
-	Calculation c;
-	queue<string> temp = s.ToStringQueue(demo.GetBuffer());
-	input.ReleaseBuffer();
-	c.sortStack(temp);
-	stringstream stream;
-	stream << c.solve();
-	string result;
-	stream >> result;
-	input = result.c_str();
-	demo = result.c_str();
+	if (input.GetLength()!=0)
+	{
+		Scan s;
+		Calculation c;
+		queue<string> temp = s.ToStringQueue(demo.GetBuffer());
+		input.ReleaseBuffer();
+		c.sortStack(temp);
+		stringstream stream;
+		stream << c.solve();
+		string result;
+		stream >> result;
+		input = result.c_str();
+		demo = result.c_str();
+	}
+	else
+	{
+		MessageBox("请输入表达式！！！");
+	}
 	UpdateData(FALSE);
 }
 
@@ -523,9 +530,9 @@ void CCalculatorDlg::OnBnClickedButtonStart()
 {
 	// TODO: 在此添加控件通知处理程序代码
 	UpdateData(TRUE);
-	if (file_path)
+	if (file_path.GetLength()>0)
 	{
-		if (file_path_put)
+		if (file_path_put.GetLength()>0)
 		{
 			ifstream infile(file_path);
 			ofstream outfile(file_path_put);

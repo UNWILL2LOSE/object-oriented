@@ -1,4 +1,4 @@
-﻿生成启动时间为 2016/6/6 21:21:43。
+﻿生成启动时间为 2016/6/6 21:55:18。
      1>项目“D:\object-oriented-master\Calculator\Calculator.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt CalculatorDlg.cpp
@@ -19,4 +19,4 @@
 
 已成功生成。
 
-已用时间 00:00:05.94
+已用时间 00:00:23.68
